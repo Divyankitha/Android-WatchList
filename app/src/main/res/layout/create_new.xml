@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:text="Create New Task"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView14"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Time"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_marginTop="62dp"
+        android:id="@+id/textView17" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/task"
+        android:layout_alignBaseline="@+id/textView15"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignStart="@+id/date" />
+
+
+    <TextView
+        android:text="Date"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:id="@+id/textView16"
+        android:textAlignment="center"
+        android:layout_below="@+id/task"
+        android:layout_alignStart="@+id/textView15" />
+
+
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        android:onClick="insertAppointment"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView16" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button10"
+        android:onClick="finishCreate"
+        android:layout_alignBaseline="@+id/button5"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_alignEnd="@+id/textView14" />
+
+    <TextView
+        android:text="Remind about?"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView14"
+        android:layout_alignStart="@+id/textView14" />
+
+    <Button
+        android:text="Pick"
+        android:id="@+id/pickDate"
+        android:layout_height="40dp"
+        android:layout_width="55dp"
+        android:layout_alignTop="@+id/date"
+        android:layout_toEndOf="@+id/date"
+        android:onClick="showDatePickerDialog" />
+
+    <EditText
+        android:layout_height="40dp"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/time"
+        android:hint="HH:MM:SS"
+        android:layout_width="120dp"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_toEndOf="@+id/textView15"
+        android:layout_marginStart="18dp"
+        android:textSize="16sp"
+        android:textAlignment="textStart" />
+
+    <EditText
+        android:layout_height="40dp"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/date"
+        android:hint="MM/DD/YYYY"
+        android:layout_width="120dp"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_alignStart="@+id/time"
+        android:textSize="16sp"
+        android:textAlignment="textStart" />
+
+    <Button
+        android:text="Pick"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/time"
+        android:layout_toEndOf="@+id/date"
+        android:id="@+id/pickTime"
+        android:onClick="showTimePickerDialog" />
+
+</RelativeLayout>

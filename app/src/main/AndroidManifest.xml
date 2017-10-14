@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.divyankitharaghavaurs.reminderapp">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mainlogo"
+        android:label="ToDo Task"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".login"
+            android:label="User Login" >
+        </activity>
+
+        <activity
+            android:name=".register"
+            android:label="User SignUp" >
+        </activity>
+
+        <activity
+            android:name=".create"
+            android:label="Create New Task" >
+        </activity>
+
+        <activity android:name=".successDialog"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog.FixedSize"
+            />
+        <service android:name=".NotifyService"/>
+
+        <activity android:name=".appointment"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog.FixedSize"
+            />
+        <activity android:name=".displayActiveTasks" />
+
+        <activity android:name=".account" />
+        <activity android:name=".loginAgain"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog.FixedSize"
+            />
+
+    </application>
+
+</manifest>

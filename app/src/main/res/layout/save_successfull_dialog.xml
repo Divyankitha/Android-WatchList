@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="@drawable/background"
+    android:padding="12dip"
+    android:layout_centerHorizontal="true"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:paddingBottom="12dip"
+        android:id="@+id/task_display"
+        android:text="appointment saved Successfully!" />
+
+    <Button
+        android:text="goto home"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="29dp"
+        android:id="@+id/button6"
+        android:onClick="gotoHome" />
+
+    <Button
+        android:text="Create another"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button6"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/button7"
+        android:layout_width="100dp"
+        android:onClick="gotoCreate" />
+
+</RelativeLayout>

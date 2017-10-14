@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/background">
+
+    <TextView
+        android:text="HOME"
+        android:textSize="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView12"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:weightSum="1"
+        android:layout_height="320dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:text="Create New Tasks"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/create"
+            android:onClick="gotoCreate"
+            android:layout_weight="0.16"
+            android:elevation="22dp"
+            android:textStyle="normal|italic" />
+
+        <Button
+            android:text="View My Tasks"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/active"
+            android:onClick="gotoActiveTasks"
+            android:layout_weight="0.14"
+            android:textStyle="normal|italic" />
+
+        <Button
+            android:text="View Account information"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/button15"
+            android:onClick="gotoAccount"
+            android:layout_weight="0.17"
+            android:textStyle="normal|italic" />
+
+        <Button
+            android:text="Logout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/button8"
+            android:onClick="onClicklogout"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.17"
+            android:textStyle="normal|italic" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/border3"
+        android:id="@+id/imageView3"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
