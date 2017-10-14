@@ -17,7 +17,7 @@ public class MainActivity extends Activity {
 
 
     AlertDialogManager alert = new AlertDialogManager();
-    SessionManager session;
+    SessionManager session; //session manager instance
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
